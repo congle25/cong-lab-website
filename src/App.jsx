@@ -5,12 +5,13 @@ import Home from './pages/Home'
 import Research from './pages/Research'
 import Team from './pages/Team'
 import Publications from './pages/Publications'
+import Software from './pages/Software'
 import Support from './pages/Support'
 import Contact from './pages/Contact'
 
 export default function App() {
   return (
-    <BrowserRouter basename="/cong-lab-website">
+    <BrowserRouter>
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-1">
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/research" element={<Research />} />
             <Route path="/team" element={<Team />} />
             <Route path="/publications" element={<Publications />} />
+            <Route path="/software" element={<Software />} />
             <Route path="/support" element={<Support />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

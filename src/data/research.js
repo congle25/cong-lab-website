@@ -12,6 +12,8 @@ export const researchAreas = [
       'Intelligent AI agents for experimental design',
     ],
     color: 'navy',
+    image: `${import.meta.env.BASE_URL}images/crispr-gpt-fig1.png`,
+    imageCaption: 'CRISPR-GPT: LLM-powered agentic system for gene editing — Nature Biomedical Engineering, 2025',
   },
   {
     id: 'stem-cells',
@@ -26,6 +28,8 @@ export const researchAreas = [
       'Rejuvenation and anti-aging strategies',
     ],
     color: 'sage',
+    image: `${import.meta.env.BASE_URL}images/daisy-fig1.jpg`,
+    imageCaption: 'DAISY: ML-optimized Cas12a barcoding for single-cell lineage recovery — Molecular Cell, 2022',
   },
   {
     id: 'neuro-immune',
@@ -40,5 +44,7 @@ export const researchAreas = [
       'Collaborative neuroscience and cardiovascular research',
     ],
     color: 'coral',
+    image: `${import.meta.env.BASE_URL}images/rgc-neuron-fig1.jpg`,
+    imageCaption: 'Single-cell transcriptome analysis of regenerating RGCs reveals glaucoma neural repair genes — Neuron, 2022',
   },
 ]

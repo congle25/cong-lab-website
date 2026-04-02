@@ -81,7 +81,7 @@ export default function Research() {
                 <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: '#9ca3af', marginBottom: '1.25rem' }}>
                   Topics
                 </p>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, marginBottom: area.image ? '1.5rem' : 0 }}>
                   {area.details.map((detail) => (
                     <li key={detail} style={{
                       fontFamily: 'var(--font-body)',
@@ -98,6 +98,25 @@ export default function Research() {
                     </li>
                   ))}
                 </ul>
+                {area.image && (
+                  <figure style={{ margin: 0 }}>
+                    <img
+                      src={area.image}
+                      alt={area.imageCaption}
+                      style={{ width: '100%', display: 'block', border: '1px solid var(--color-border)' }}
+                    />
+                    <figcaption style={{
+                      fontFamily: 'var(--font-mono)',
+                      fontSize: '0.6rem',
+                      letterSpacing: '0.05em',
+                      color: '#9ca3af',
+                      marginTop: '0.5rem',
+                      lineHeight: 1.5,
+                    }}>
+                      {area.imageCaption}
+                    </figcaption>
+                  </figure>
+                )}
               </div>
             </div>
           </motion.div>

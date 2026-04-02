@@ -32,3 +32,14 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+  .hero-section {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-section > div:last-child {
+    min-height: 40vh;
+    border-left: none !important;
+    border-top: 1px solid var(--color-border);
+  }
+}
