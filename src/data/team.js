@@ -58,9 +58,15 @@ export const members = [
     photo: null,
   },
   {
-    name: 'Hannah Chung',
+    name: 'Luna Lyu',
     role: 'Ph.D. Student',
-    education: 'B.S., Seoul National University (Chemistry)',
+    education: 'B.S., Wellesley College & MIT (ICME, Stanford)',
+    photo: null,
+  },
+  {
+    name: 'David Smerkous',
+    role: 'Ph.D. Student',
+    education: 'B.S., University of Washington',
     photo: null,
   },
   // Lab Staff
@@ -74,12 +80,6 @@ export const members = [
     name: 'William A. Johnson',
     role: 'Research Associate',
     education: 'B.S., Cal Poly San Luis Obispo',
-    photo: null,
-  },
-  {
-    name: 'Pari Gunasekaran',
-    role: 'Research Associate',
-    education: 'B.S., UC Riverside',
     photo: null,
   },
 ]
