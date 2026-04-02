@@ -42,4 +42,10 @@ html {
     border-left: none !important;
     border-top: 1px solid var(--color-border);
   }
+  .alumni-row {
+    grid-template-columns: 1fr !important;
+  }
+  .alumni-row span:last-child {
+    text-align: left !important;
+  }
 }

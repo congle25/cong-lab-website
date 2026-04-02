@@ -190,21 +190,18 @@ export default function Team() {
               <div style={{ border: '1px solid var(--color-border)', padding: '1.5rem' }}>
                 {alumni.map((a, i) => (
                   <div key={i} style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr 1fr',
                     alignItems: 'center',
                     padding: '0.75rem 0',
                     borderBottom: i < alumni.length - 1 ? '1px solid var(--color-border)' : 'none',
-                    flexWrap: 'wrap',
                     gap: '0.5rem',
-                  }}>
+                  }} className="alumni-row">
                     <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: 'var(--color-navy)' }}>{a.name}</span>
-                    <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#9ca3af' }}>{a.currentPosition}</span>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', letterSpacing: '0.04em', color: '#9ca3af' }}>{a.prevRole}</span>
+                    <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#6b7280', textAlign: 'right' }}>{a.currentPosition}</span>
                   </div>
                 ))}
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#9ca3af', marginTop: '1rem', fontStyle: 'italic' }}>
-                  Full alumni list coming soon — please update src/data/team.js with names and positions.
-                </p>
               </div>
             </motion.div>
           )}

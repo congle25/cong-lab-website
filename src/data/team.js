@@ -85,9 +85,22 @@ export const members = [
 ]
 
 export const alumni = [
-  { name: 'Alum 1', currentPosition: 'Ph.D. Program, MIT' },
-  { name: 'Alum 2', currentPosition: 'Faculty Position' },
-  { name: 'Alum 3', currentPosition: 'Research Role' },
-  { name: 'Alum 4', currentPosition: 'Medical Residency' },
-  // TODO: fill in full alumni names and positions from the current site
+  // Former staff
+  { name: 'Pari Gunasekaran', prevRole: 'Research Associate', currentPosition: 'M.D. Candidate' },
+  { name: 'Hong Xiang', prevRole: 'Lab Manager & Senior Scientist', currentPosition: 'Ph.D., University of Sydney' },
+  { name: 'William A. Johnson', prevRole: 'Research Associate', currentPosition: 'Ph.D. Candidate in Bioinformatics, UCSF' },
+  { name: 'Cheng Pan', prevRole: 'Research Associate', currentPosition: 'Scientist, Stanford University' },
+  { name: 'Qiong Xia', prevRole: 'Research Scientist', currentPosition: 'Scientist, Stanford University' },
+  // Former postdocs
+  { name: 'Chengkun Wang', prevRole: 'Postdoctoral Fellow', currentPosition: 'Faculty, Nanjing Medical University' },
+  // Former PhD students / trainees
+  { name: 'Hannah Chung', prevRole: 'Ph.D. Student', currentPosition: '' },
+  { name: 'Nicholas Hughes', prevRole: 'Ph.D. Candidate in Genetics (joint w/ Dr. Monte Winslow)', currentPosition: 'CEO & Founder, Acrobat Genomics' },
+  { name: 'Jason Cheng', prevRole: 'Ph.D. Candidate in Genetics', currentPosition: 'Scientist, Ginkgo Bioworks' },
+  { name: 'Henry Cousins', prevRole: 'M.D./Ph.D. Collaborating Student', currentPosition: 'Residency, Mass General Hospital / Mass Eye & Ear' },
+  // Former research associates & visitors
+  { name: 'Justin Pierce', prevRole: 'Research Associate', currentPosition: 'M.D. Candidate, University of Missouri' },
+  { name: 'Jiaqi Zhang', prevRole: 'Undergraduate Visitor', currentPosition: 'Ph.D. Candidate, MIT EECS/LIDS (Computer Science)' },
+  { name: 'Qianhe Zhang', prevRole: 'Research Associate', currentPosition: 'Ph.D. Candidate, MIT Bioengineering' },
+  { name: 'Stephen Su', prevRole: 'Stanford Bio-X Undergraduate Fellow', currentPosition: '' },
 ]
