@@ -75,6 +75,7 @@ export default function Team() {
   const staff = members.filter(m => !m.role.includes('Postdoctoral') && !m.role.includes('Ph.D. Student'))
 
   return (
+    <div>
     <div style={{ padding: '5rem 1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
       {/* Header */}
       <motion.div
@@ -145,7 +146,43 @@ export default function Team() {
           </div>
         </motion.div>
       </div>
+    </div>
 
+    {/* Group photo — full width */}
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.9 }}
+      style={{ position: 'relative', width: '100%', height: '420px', overflow: 'hidden', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}
+    >
+      <img
+        src={`${import.meta.env.BASE_URL}images/Group_photo.jpg`}
+        alt="Cong Lab group photo"
+        style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
+      />
+      <div style={{
+        position: 'absolute',
+        inset: 0,
+        background: 'linear-gradient(to top, rgba(46,58,92,0.45) 0%, transparent 60%)',
+        pointerEvents: 'none',
+      }} />
+      <p style={{
+        position: 'absolute',
+        bottom: '1.5rem',
+        left: '2rem',
+        fontFamily: 'var(--font-display)',
+        fontWeight: 300,
+        fontStyle: 'italic',
+        fontSize: 'clamp(1.2rem, 2.5vw, 1.8rem)',
+        color: 'rgba(255,255,255,0.92)',
+        letterSpacing: '0.02em',
+      }}>
+        Cong Lab · Stanford University
+      </p>
+    </motion.div>
+
+    <div style={{ padding: '0 1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
       {/* Postdocs */}
       <MemberGroup title="Postdoctoral Fellows" members={postdocs} />
 
@@ -235,6 +272,7 @@ export default function Team() {
           .pi-card { flex-direction: column !important; }
         }
       `}</style>
+    </div>
     </div>
   )
 }
