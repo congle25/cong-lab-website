@@ -41,8 +41,9 @@ export const softwareTools = [
     status: 'Publicly available',
     website: 'https://claw4s.github.io/',
     tags: ['AI Agents', 'Scientific Discovery', 'Open Science'],
-    image: null,
+    image: `${import.meta.env.BASE_URL}images/claw4s-logo.png`,
     imageCaption: null,
+    imageFit: 'contain',
   },
   {
     name: 'MedOS',
@@ -52,8 +53,9 @@ export const softwareTools = [
     status: 'Publicly available',
     website: 'https://medos-ai.github.io/',
     tags: ['AI Agents', 'Medical AI', 'Clinical', 'Automation'],
-    image: null,
+    image: `${import.meta.env.BASE_URL}images/medos-logo.png`,
     imageCaption: null,
+    imageFit: 'contain',
   },
   {
     name: 'CLOVER',

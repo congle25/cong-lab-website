@@ -113,11 +113,11 @@ export default function Software() {
 
             {/* Right: image */}
             {tool.image && (
-              <div style={{ borderLeft: '1px solid var(--color-border)', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ borderLeft: '1px solid var(--color-border)', display: 'flex', flexDirection: 'column', backgroundColor: tool.imageFit === 'contain' ? 'var(--color-bg-soft)' : 'transparent' }}>
                 <img
                   src={tool.image}
-                  alt={tool.imageCaption}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block', minHeight: '200px', maxHeight: '320px' }}
+                  alt={tool.imageCaption || tool.name}
+                  style={{ width: '100%', height: '100%', objectFit: tool.imageFit || 'cover', objectPosition: 'center', display: 'block', minHeight: '200px', maxHeight: '320px', padding: tool.imageFit === 'contain' ? '2rem' : '0' }}
                 />
                 {tool.imageCaption && (
                   <p style={{
