@@ -159,12 +159,13 @@ export default function Team() {
       <img
         src={`${import.meta.env.BASE_URL}images/Group_photo.jpg`}
         alt="Cong Lab group photo"
-        style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
+        style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block', opacity: 0.22, filter: 'saturate(0.6)' }}
       />
       <div style={{
         position: 'absolute',
         inset: 0,
-        background: 'linear-gradient(to top, rgba(46,58,92,0.45) 0%, transparent 60%)',
+        background: 'var(--color-background)',
+        opacity: 0.55,
         pointerEvents: 'none',
       }} />
       <p style={{
@@ -175,7 +176,7 @@ export default function Team() {
         fontWeight: 300,
         fontStyle: 'italic',
         fontSize: 'clamp(1.2rem, 2.5vw, 1.8rem)',
-        color: 'rgba(255,255,255,0.92)',
+        color: 'var(--color-navy)',
         letterSpacing: '0.02em',
       }}>
         Cong Lab · Stanford University
