@@ -82,9 +82,9 @@ export default function Team() {
       <img
         src={`${import.meta.env.BASE_URL}images/Group_photo.jpg`}
         alt="Cong Lab group photo"
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', opacity: 0.18, filter: 'saturate(0.5)', display: 'block' }}
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', opacity: 0.38, filter: 'saturate(0.7)', display: 'block' }}
       />
-      <div style={{ position: 'absolute', inset: 0, background: 'var(--color-background)', opacity: 0.5, pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'var(--color-background)', opacity: 0.35, pointerEvents: 'none' }} />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

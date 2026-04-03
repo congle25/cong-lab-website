@@ -12,6 +12,17 @@ export const softwareTools = [
     imageCaption: 'LabOS: AR/XR-guided human-AI collaboration at the bench — bioRxiv 2025',
   },
   {
+    name: 'MedOS',
+    tagline: 'AI Operating System for Medical Research and Clinical Applications',
+    description:
+      'An AI-powered platform extending the LabOS framework into medical research and clinical settings, enabling intelligent automation of medical data analysis, literature synthesis, and clinical decision support.',
+    status: 'Publicly available',
+    website: 'https://medos-ai.github.io/',
+    tags: ['AI Agents', 'Medical AI', 'Clinical', 'Automation'],
+    image: null,
+    imageCaption: null,
+  },
+  {
     name: 'LabClaw',
     tagline: 'Skill Library for Biomedical AI Agents',
     description:
@@ -32,6 +43,17 @@ export const softwareTools = [
     tags: ['AI', 'CRISPR', 'Automation'],
     image: `${import.meta.env.BASE_URL}images/crispr-gpt-fig1.png`,
     imageCaption: 'Fig. 1 — Overview of the CRISPR-GPT multi-agent system',
+  },
+  {
+    name: 'Claw4Science',
+    tagline: 'Agentic AI Framework for Scientific Discovery',
+    description:
+      'An open conference and framework bringing together agentic AI tools for scientific research workflows, fostering collaboration between AI and domain scientists across biology, chemistry, and medicine.',
+    status: 'Publicly available',
+    website: 'https://claw4s.github.io/',
+    tags: ['AI Agents', 'Scientific Discovery', 'Open Science'],
+    image: null,
+    imageCaption: null,
   },
   {
     name: 'CLOVER',
