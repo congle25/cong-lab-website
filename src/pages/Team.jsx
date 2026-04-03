@@ -76,13 +76,20 @@ export default function Team() {
 
   return (
     <div>
-    <div style={{ padding: '5rem 1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
-      {/* Header */}
+
+    {/* Hero header with group photo background */}
+    <div style={{ position: 'relative', width: '100%', overflow: 'hidden', borderBottom: '1px solid var(--color-border)' }}>
+      <img
+        src={`${import.meta.env.BASE_URL}images/Group_photo.jpg`}
+        alt="Cong Lab group photo"
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', opacity: 0.18, filter: 'saturate(0.5)', display: 'block' }}
+      />
+      <div style={{ position: 'absolute', inset: 0, background: 'var(--color-background)', opacity: 0.5, pointerEvents: 'none' }} />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        style={{ marginBottom: '4rem', maxWidth: '640px' }}
+        style={{ position: 'relative', padding: '5rem 1.5rem 4rem', maxWidth: '1100px', margin: '0 auto' }}
       >
         <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#9ca3af', marginBottom: '1rem' }}>
           People
@@ -98,14 +105,16 @@ export default function Team() {
         }}>
           Team
         </h1>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', lineHeight: 1.75, color: '#6b7280', fontWeight: 300 }}>
-          We are a diverse and interdisciplinary team of scientists at Stanford. We are always looking for motivated researchers to join us.
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', lineHeight: 1.75, color: '#6b7280', fontWeight: 300, maxWidth: '560px' }}>
+          We are an interdisciplinary team of scientists and engineers at Stanford. We are always looking for motivated researchers to join us.
         </p>
       </motion.div>
+    </div>
 
+    <div style={{ padding: '3rem 1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
       {/* PI */}
-      <div style={{ marginBottom: '4rem' }}>
-        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#9ca3af', marginBottom: '2rem' }}>
+      <div style={{ marginBottom: '3rem' }}>
+        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#9ca3af', marginBottom: '1.5rem' }}>
           Principal Investigator
         </p>
         <motion.div
@@ -146,44 +155,6 @@ export default function Team() {
           </div>
         </motion.div>
       </div>
-    </div>
-
-    {/* Group photo — full width */}
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.9 }}
-      style={{ position: 'relative', width: '100%', height: '420px', overflow: 'hidden', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}
-    >
-      <img
-        src={`${import.meta.env.BASE_URL}images/Group_photo.jpg`}
-        alt="Cong Lab group photo"
-        style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block', opacity: 0.22, filter: 'saturate(0.6)' }}
-      />
-      <div style={{
-        position: 'absolute',
-        inset: 0,
-        background: 'var(--color-background)',
-        opacity: 0.55,
-        pointerEvents: 'none',
-      }} />
-      <p style={{
-        position: 'absolute',
-        bottom: '1.5rem',
-        left: '2rem',
-        fontFamily: 'var(--font-display)',
-        fontWeight: 300,
-        fontStyle: 'italic',
-        fontSize: 'clamp(1.2rem, 2.5vw, 1.8rem)',
-        color: 'var(--color-navy)',
-        letterSpacing: '0.02em',
-      }}>
-        Cong Lab · Stanford University
-      </p>
-    </motion.div>
-
-    <div style={{ padding: '0 1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
       {/* Postdocs */}
       <MemberGroup title="Postdoctoral Fellows" members={postdocs} />
 
