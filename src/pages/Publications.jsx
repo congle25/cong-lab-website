@@ -22,13 +22,9 @@ export default function Publications() {
           fontSize: 'clamp(2rem, 4vw, 3.5rem)',
           color: 'var(--color-navy)',
           lineHeight: 1.15,
-          marginBottom: '1.25rem',
         }}>
           Publications
         </h1>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', lineHeight: 1.75, color: '#6b7280', fontWeight: 300 }}>
-          A full list of publications is maintained on Stanford Profiles.
-        </p>
       </motion.div>
 
       {/* Stanford Profiles link */}
